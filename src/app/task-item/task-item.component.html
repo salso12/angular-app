@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="row my-5 mx-5">
+    <div class="col-md-4 col-xl-3">
+      <div class="card bg-c-green order-card my-5 mx-5" style="max-width: 70rem;">
+          <div class="card-header">
+              <h6 class="m-b-20">{{task.name}}</h6>
+          </div>
+          <div class="card-body">
+            <h2 class="text-right"><i class="fa fa-calendar f-left"></i><span> {{task.date }}</span></h2>
+            <p class="m-b-0" [ngClass]="{'text-success': task.completed, 'text-danger': !task.completed}">
+              task status: <span class="f-right">{{ task.completed ? 'completed' : 'not completed' }}</span>
+            </p>
+
+            <div class="row">
+              <div class="col-6" style="font-size: xx-large;">Task's priority
+              </div>
+              <div class="col-6"><span class="chip" [ngClass]="{'hight': task.priority === 'Hight', 'meduim': task.priority === 'Meduim', 'low': task.priority === 'Low'}">
+                {{task.priority}}
+              </span></div>
+            </div>
+
+          </div>
+
+
+
+      </div>
+    </div>
+  </div>
+<!-- <div class="card border-primary mb-3" style="max-width: 70rem;">
+  <div class="card-header">{{task.id}}</div>
+  <div class="card-body">
+    <h2 class="card-title">{{task.name}}</h2>
+    <div class="row">
+      <div class="col-6">Task's priority
+      </div>
+      <div class="col-6"></div>
+    </div>
+    <span class="chip" [ngClass]="{'hight': task.priority === 'Hight', 'meduim': task.priority === 'Meduim', 'low': task.priority === 'Low'}">
+      {{task.priority}}
+    </span>
+    <h4> {{ task.completed}}</h4>
+    <h3>  <i class="fa fa-calendar" aria-hidden="true"></i>    {{task.date}}</h3>
+  </div>-->
+
+</div>
+
+

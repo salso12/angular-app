@@ -1,0 +1,83 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="row my-4">
+    <div class="col-6 mx-auto">
+      <form [formGroup]="taskForm" (ngSubmit)="addTask()">
+        <fieldset>
+          <div class="form-group my-2">
+            <label for="exampleInputEmail1" class="form-label">name</label>
+            <input class="form-control" id="Title" placeholder="Enter the title" formControlName="name">
+            <div class="alert alert-danger" *ngIf="taskForm.get('name')?.invalid && (taskForm.get('name')?.touched || taskForm.get('name')?.dirty)">
+              <div *ngIf="taskForm.get('name')?.errors?.['required']">this field is required</div>
+            </div>
+          </div>
+          <div class="form-group my-2">
+            <label for="exampleInputEmail1" class="form-label">status</label>
+            <input type="text" class="form-control" id="status" placeholder="Enter the status" formControlName="completed">
+            <div class="alert alert-danger" *ngIf="taskForm.get('completed')?.invalid && (taskForm.get('completed')?.touched || taskForm.get('completed')?.dirty)">
+              <div *ngIf="taskForm.get('completed')?.errors?.['required']">this field is required</div>
+            </div>
+          </div>
+          <div class="form-group my-2">
+            <label for="exampleInputEmail1" class="form-label">priority</label>
+            <input type="text" class="form-control" id="priority" placeholder="Enter the priority" formControlName="priority">
+            <div class="alert alert-danger" *ngIf="taskForm.get('priority')?.invalid && (taskForm.get('priority')?.touched || taskForm.get('priority')?.dirty)">
+              <div *ngIf="taskForm.get('priority')?.errors?.['required']">this field is required</div>
+            </div>
+          </div>
+          <div class="form-group my-2">
+            <label for="exampleInputEmail1" class="form-label">date</label>
+            <input type="date" class="form-control" id="date" placeholder="Enter the date" formControlName="date">
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary" style="width: -webkit-fill-available"><i class="fa fa-paper-plane" aria-hidden="true"></i> submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+  <!-- <div class="row">
+    <div class="col-10"><input name="search" [(ngModel)]="searchTerm" class="form-control me-sm-2" type="search" placeholder="Search"></div>
+    <div class="col-2"><button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button></div>
+  </div> -->
+  <!-- <div class="row" >
+    <div class="col-6 mt-5"><h1>List of Tasks</h1></div>
+    </div>
+    <div class="row ">
+    <div class="col mt-12">
+      <div class="bttt">
+        <button type="button" align="right" class="btn btn-primary mt-3" (click)="toggleFormVisibility()"><i class="fa fa-plus" aria-hidden="true"></i>  Add a new Task </button>
+      </div>
+     <div>
+      <table class="table table-sriped table-dark mt-3" >
+
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">name</th>
+            <th scope="col">status</th>
+            <th scope="col">priority</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr class="table-dark" *ngFor="let x of Tasks ">
+          <th scope="row">{{ x.id}}</th>
+          <td>{{ x.name}}</td>
+          <td>
+            {{ x.completed}}</td>
+          <td>{{ x.priority }}</td>
+          <td class="text-center my-3">
+            <button type="button" class="btn btn-warning mt-2" (click)="deleteTask(x.id)"><i class="fa fa-trash" aria-hidden="true" ></i></button>
+            <button type="button" class="btn btn-danger mt-2" (click)="editTask(x)"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+</div>
+</div>
+ -->

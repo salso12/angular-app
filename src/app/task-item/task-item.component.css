@@ -1,0 +1,71 @@
+.card {
+  border-radius: 5px; /* round the corners */
+  box-shadow: 0 2px 4px rgba(244, 242, 242, 0.996); /* add a shadow */
+  margin: 20px auto; /* center the card horizontally */
+  max-width: 70rem; /* set the maximum width */
+  padding: 20px; /* add some padding */
+}
+
+.card-header {
+  /* set the header text color */
+  font-size: 40px; /* set the header font size */
+  font-weight: bold; /* set the header font weight */
+  padding: 10px; /* add some padding */
+}
+
+.card-title {
+  font-size: 36px; /* set the title font size */
+  margin-bottom: 20px; /* add some space below the title */
+}
+.card.bg-c-green.order-card {
+  width: 655px;
+  height: 363px;
+}
+
+h4 {
+  font-size: 18px; /* set the font size for the priority and completed fields */
+  margin-bottom: 10px; /* add some space below each field */
+}
+.chip {
+  display: inline-block;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hight {
+  background-color: #ff5555;
+  color: #fff;
+}
+
+.meduim {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.low {
+  background-color: #55dd55;
+  color: #fff;
+}
+.h6, h6 {
+  font-size: 2rem;
+}
+p.m-b-0 {
+  font-size: x-large;
+  margin-top: revert;
+}
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+  margin-top: auto;
+}
+a[_ngcontent-yhh-c4] {
+  font-size: xx-large;
+}
+button.btn.btn-info {
+  font-size: large;
+}

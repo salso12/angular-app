@@ -1,0 +1,74 @@
+{
+  "task": [
+    {
+      "name": "Make your bed  1",
+      "completed": false,
+      "priority": "Hight",
+      "id": 1,
+      "date": "12/03/2022"
+    },
+    {
+      "name": "Exercise for at least 30 minutes",
+      "id": 2,
+      "completed": true,
+      "priority": "Hight",
+      "date": "12/03/2022"
+    },
+    {
+      "name": "Tidy up your living space before bed",
+      "id": 3,
+      "completed": false,
+      "priority": "Low",
+      "date": "10/03/2022"
+    },
+    {
+      "name": "Check your email and respond to important messages",
+      "id": 5,
+      "completed": false,
+      "priority": "Meduim",
+      "date": "10/03/2022"
+    },
+    {
+      "name": "Collaborate with colleagues on projects",
+      "id": 6,
+      "completed": true,
+      "priority": "Low",
+      "date": "10/03/2022"
+    },
+    {
+      "name": "Organize and clean your workspace before leaving for the day",
+      "id": 8,
+      "completed": true,
+      "priority": "Low",
+      "date": "10/03/2022"
+    },
+    {
+      "name": "Do laundry and fold clothes",
+      "id": 9,
+      "completed": false,
+      "priority": "Meduim",
+      "date": "10/03/2022"
+    },
+    {
+      "name": "Prepare meals and plan a weekly menu",
+      "id": 10,
+      "completed": true,
+      "priority": "Low",
+      "date": "10/03/2022"
+    },
+    {
+      "name": "Tidy up your living space before bed 1",
+      "completed": false,
+      "priority": "Low",
+      "date": "10/03/2022",
+      "id": 18
+    },
+    {
+      "name": "Exercise for at least 3 minutes",
+      "completed": true,
+      "priority": "Hight",
+      "date": "2023-03-14",
+      "id": 19
+    }
+  ]
+}
